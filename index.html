@@ -21,7 +21,7 @@
     
           .Header1 {
         font-family: "Bodini Poster", serif;
-        font-size: 50px;
+        font-size: 250%;
         color: white;
         font-weight: 900;
         text-align: left;
@@ -116,8 +116,9 @@
       
       background-color: black;
     }
+    
     .home{
-      position: relative;
+    position: relative;
     }
     
     img
@@ -128,31 +129,13 @@
     height: auto; 
     max-width: 100%;
     }
-   .text {
-  position: fixed;
-  top: 40%;
-  right: 50%;
-  background-color: black;
-  color: white;
-  transform: translate(50%, -50%);
-}
-
-@media screen and (max-width: 900px) {
-  .text {
-    right: auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .text {
-    right: auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4vw; /* Adjust font size as needed */
-  }
-}
+  	.text {
+ 	 	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	background-color: black;
+  	color: white;
+		}
 
       position: left;
       width: auto;
@@ -178,10 +161,10 @@
 
   <div class="content">
     <div id="home">
-      <div class="img">
+    <div class="img">
       <img src="Tommy (1).png">
         <div class="text"> 
-          <h1 class="Header1"> Understanding Tommy </h1>
+        <h1 class="Header1"> Understanding Tommy </h1>
         </div>
     </div>  
     </div>
