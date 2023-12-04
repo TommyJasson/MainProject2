@@ -116,15 +116,44 @@
       
       background-color: black;
     }
-
+    .home{
+      position: relative;
+    }
+    
     img
     {
-    top: 50%;
-    left: 10%;
-    width: 50%; 
+    position: relative;
+    left: -8%;
+    width: 70%; 
     height: auto; 
     max-width: 100%;
     }
+   .text {
+  position: fixed;
+  top: 40%;
+  right: 50%;
+  background-color: black;
+  color: white;
+  transform: translate(50%, -50%);
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw; /* Adjust font size as needed */
+  }
+}
+
       position: left;
       width: auto;
       height: 300px;
@@ -151,8 +180,10 @@
     <div id="home">
       <div class="img">
       <img src="Tommy (1).png">
-      </div>
-      <h1 class="Header1"> Understanding Tommy </h1>
+        <div class="text"> 
+          <h1 class="Header1"> Understanding Tommy </h1>
+        </div>
+    </div>  
     </div>
 	</div>
       <h2 class="Header2"> Header #2 </h2>
