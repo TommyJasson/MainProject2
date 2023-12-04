@@ -62,28 +62,38 @@
     }
 
     .rectangle {
-      border: 10px #FF7070 solid;
-      position: static;
-      width: auto;
-      height: 400px;
-      left: auto;
-      bottom: 150px;
-      background-color: white;
+  border: 10px #FF7070 solid;
+  position: static;
+  width: auto;
+  height: 400px;
+  left: auto;
+  bottom: 150px;
+  background-image: url("Image1.JPG");
+  	background-size: cover;
+  	background-position: center center; 
+  	background-repeat: no-repeat;   
+			}
+    .rectanglesmall {
+      position: absolute;
+      top: 420;
+      left: 24;
+      width: 673px;
+      height: 128px;
+      background-color: #FF7070; 
     }
-
-    #img1 {
+    
       position: left;
       width: auto;
       height: 300px;
       bottom: auto;
       left: 516px;
       border: 5px white solid;
-    }
   </style>
 </head>
 
 <body>
   <nav>
+    
   <ul class="sidenav">
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="https://tommyjasson.github.io/MainProject2">About Me</a></li>
@@ -98,46 +108,10 @@
     <div id="home">
       <h1>Understanding Tommy</h1>
       <div class="rectangle">
-        <p>I've made this website to be used like a microscope so that hopefully you can learn more about me. I hope to show you a bit more about my hobbies, my interests, my past work experience, and my goals.</p>
-        <img id="img1" src="Tommy (1).png" alt="Homepage">
+        <div class="rectanglesmall"></div>
       </div>
     </div>
-  
-    
-
-    <div id="AboutMe">
-      <div class="rectangle">
-      <h2>About Me</h2>
-      <p>Please fill out this section Tommy.</p>
-        </div>
-    </div>
-
-    <div id="Interests">
-      <div class="rectangle">
-      <h2>Interests</h2>
-      <p>Please fill out this section Tommy.</p>
-        </div>
-    </div>
-
-    <div id="Hobbies">
-      <div class="rectangle"> 
-      <h2 id="#Hobbies">Hobbies</h2>
-      </div>
-    </div>
-
-    <div id="Projects">
-      <div class="rectangle">
-      <h2>Projects</h2>
-    </div>
-
-    <div id="Contact">
-      <div class="rectangle">
-      <h2>Contact Me</h2>
-      <p>Please fill out this section Tommy.</p>
-    </div>
-  </div>
-</div>
-</div>    
+	</div>    
 </body>
 
 </html>
