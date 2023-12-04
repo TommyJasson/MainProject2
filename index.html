@@ -4,32 +4,81 @@
   <title>Understanding Tommy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=IM Bodini Poster|Didot|Playfair Display" rel="stylesheet">
   <style> 
+    
+    @font-face{
+      font-family: "Bodini Poster", serif;
+    }
+    
+    @font-face{
+      font-family: "Didot", serif;
+    }
+    
+     @font-face{
+      font-family: "Playfair Display", serif;
+    }
+    
+          .Header1 {
+        font-family: "Bodini Poster", serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 900;
+        text-align: left;
+        
+      }
+    
+    .Header2{
+      font-family: "Playfair Display", serif;
+        font-size: 35px;
+        color: white;
+        font-weight: 500;
+        text-align: right;
+      padding: 20px;
+    }
+      
+      .Body1 {
+        font-family: "Didot", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        text-align: right;
+        padding: 20px;
+    }
+    
+    .Body2 {
+      font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
+
     ul.sidenav {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      width: 25%;
-      background-color: #FF7070;
+      width: 15%;
+      background-color: black;
       position: fixed;
       height: 100%;
       overflow: auto;
+      color: white;
     }
 
     ul.sidenav li a {
       display: block;
-      color: #000;
       padding: 8px 16px;
       text-decoration: none;
+      color: grey;
     }
 
     ul.sidenav li a.active {
-      background-color: #FF7070;
-      color: 000;
+      background-color: black;
+      color: white;
     }
 
     ul.sidenav li a:hover:not(.active) {
-      background-color: #F6C127;
+      background-color: black;
       color: white;
     }
 
@@ -44,11 +93,13 @@
         width: 100%;
         height: auto;
         position: relative;
+        color: white;
       }
 
       ul.sidenav li a {
         float: left;
         padding: 15px;
+        color: grey;
       }
 
       div.content {margin-left: 0;}
@@ -61,27 +112,19 @@
       }
     }
     
-    .rectangle {
-  border: 10px #FF7070 solid;
-  position: relative;
-  width: 100%;
-  height: 40%;
-  bottom: 150%;
-  background-image: url("Image1.JPG");
-  background-size: cover;
-  background-position: center center; 
-  background-repeat: no-repeat;  
-  margin: auto;
-    }
     .rectanglesmall {
       position: absolute;
-      top: 68%;
-      left: 0%;
-      width: 100%;
-      height: 34%;
-      background-color: #FF7070; 
+      top: 25%;
+      left: 4%;
+      width: 56%;
+      height: 400px;
+      background-image: url('');
     }
     
+    body {
+      background-color: black;
+      
+    }
       position: left;
       width: auto;
       height: 300px;
@@ -96,18 +139,20 @@
   <nav>
     
   <ul class="sidenav">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="https://tommyjasson.github.io/MainProject2">About Me</a></li>
-    <li><a href="https://tommyjasson.github.io/Interests">Interests</a></li>
-    <li><a href="#Hobbies">Hobbies</a></li>
-    <li><a href="#Projects">Projects</a></li>
-    <li><a href="#Contact">Contact</a></li>
+    <li><a class="active Body2" href="#home">Home</a></li>
+    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body2">About Me</a></li>
+    <li><a href="https://tommyjasson.github.io/Interests" class="Body2">Interests</a></li>
+    <li><a href="#Hobbies" class="Body2">Hobbies</a></li>
+    <li><a href="#Projects" class="Body2">Projects</a></li>
+    <li><a href="#Contact" class="Body2">Contact</a></li>
   </ul>
   </nav>
 
   <div class="content">
     <div id="home">
-      <h1>Understanding Tommy</h1>
+      <h1 class="Header1"> Understanding Tommy </h1>
+      <h2 class="Header2"> Header #2 </h2>
+      <p class="Body1"> Body #1 </p>
       <div class="rectangle">
         <div class="rectanglesmall"></div>
       </div>
